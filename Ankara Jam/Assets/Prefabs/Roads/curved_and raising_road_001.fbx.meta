@@ -3,7 +3,17 @@ guid: c26ee66c0575e284bb9345f8ced395fb
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ThreeLaneRoadWet01_2K_BaseColor
+    second: {fileID: 2800000, guid: 8c85a7c2f7b240a439f20c1fabe6b91a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ThreeLaneRoadWet01_2K_Normal
+    second: {fileID: 2800000, guid: 1a62479eb4ec4c44b890f7b0856407eb, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0

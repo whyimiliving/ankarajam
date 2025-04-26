@@ -1,16 +1,18 @@
 using System;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.Rendering;
 
 public class RadioManager : MonoBehaviour
 {
     public AudioClip[] myAudioClips;
     public AudioSource myAudioSource;
-    public float soundLevel = 1;
+    public float soundLevel = 0;
 
     void Start()
     {
         myAudioSource.clip = myAudioClips[0];
+        SetVolume(0);
         myAudioSource.Play();
     }
 

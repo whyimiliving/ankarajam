@@ -3,7 +3,12 @@ guid: 42a5ebab390705f41a73763d8df0d070
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ISL_House_01_SHD_Diffuse
+    second: {fileID: 2800000, guid: c77a13504fbbe5f49af4601b811f3eb8, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0
