@@ -11,6 +11,7 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using JetBrains.Annotations;
 
 /// <summary>
 /// Scene manager that contains current player vehicle, current player camera, current player UI, current player character, recording/playing mechanim, and other vehicles as well.
@@ -21,27 +22,27 @@ public class RCCP_SceneManager : RCCP_Singleton<RCCP_SceneManager> {
     /// <summary>
     /// Current active player vehicle.
     /// </summary>
-    public RCCP_CarController activePlayerVehicle;
+    [CanBeNull] public RCCP_CarController activePlayerVehicle;
 
     /// <summary>
     /// Current active player camera as RCCP Camera.
     /// </summary>
-    public RCCP_Camera activePlayerCamera;
+    [CanBeNull] public RCCP_Camera activePlayerCamera;
 
     /// <summary>
     /// Current active UI canvas.
     /// </summary>
-    public RCCP_UIManager activePlayerCanvas;
+    [CanBeNull] public RCCP_UIManager activePlayerCanvas;
 
     /// <summary>
     /// Current active main camera.
     /// </summary>
-    public Camera activeMainCamera;
+    [CanBeNull] public Camera activeMainCamera;
 
     /// <summary>
     /// Last selected player vehicle.
     /// </summary>
-    private RCCP_CarController lastActivePlayerVehicle;
+    [CanBeNull] private RCCP_CarController lastActivePlayerVehicle;
 
     /// <summary>
     /// Registers the lastly spawned vehicle as player vehicle.
