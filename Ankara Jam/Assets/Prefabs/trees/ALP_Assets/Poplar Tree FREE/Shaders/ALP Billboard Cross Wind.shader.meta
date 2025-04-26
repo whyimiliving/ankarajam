@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: c271d8d8e9a857d489348a894266272e
+AssetOrigin:
+  serializedVersion: 1
+  productId: 301037
+  packageName: Big Poplar Tree FREE
+  packageVersion: 1.0
+  assetPath: Assets/ALP_Assets/Poplar Tree FREE/Shaders/ALP Billboard Cross Wind.shader
+  uploadId: 704319
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures:
+  - _MainTex: {fileID: 2800000, guid: d7e1bc1cf7e548c42ab1a3e87bb7a549, type: 3}
+  - _BumpMap: {instanceID: 0}
+  nonModifiableTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

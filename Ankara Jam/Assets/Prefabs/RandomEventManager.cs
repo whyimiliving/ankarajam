@@ -1,24 +1,62 @@
+using NUnit.Framework.Interfaces;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class RandomEventManager : MonoBehaviour
 {
-    public List<Transform> myPositions;
+    public List<Transform> myOnRoadPositions;
+    public List<Transform> myNextRoadPositions;
 
     private void Start()
     {
-        var index = Random.Range(0, myPositions.Count);
-        CreateRandomEvent(index);
-        var index2 = Random.Range(0, myPositions.Count);
-        if (index != index2)
+        var count = Random.Range(1, 4);
+        for (int i = 0; i < count; i++)
         {
-            CreateRandomEvent(index2);
+            CreateRandom();
         }
     }
 
-    public void CreateRandomEvent(int index)
+    public void CreateRandom()
     {
         var spawnObj = SjGameManager.instance.RandomEvents[Random.Range(0, SjGameManager.instance.RandomEvents.Length)];
-        var spawned = Instantiate(spawnObj, myPositions[index]);
+        var components = spawnObj.GetComponents<Component>();
+
+        foreach (var component in components)
+        {
+            if (component is INextRoad)
+            {
+                //INextRoad testComponent = (INextRoad)component;
+                CreateNextRoadRandomEvent(spawnObj);
+                break;
+            }
+            if (component is IInRoad)
+            {
+                //IInRoad testComponent = (IInRoad)component;
+                CreateOnRoadRandomEvent(spawnObj);
+                break;
+            }
+        }
+    }
+
+    public void CreateOnRoadRandomEvent(GameObject spawnObj)
+    {
+        var index = Random.Range(0, myOnRoadPositions.Count);
+        List<Transform> children = new List<Transform>();
+        foreach (Transform child in myOnRoadPositions[index])
+        {
+            children.Add(child.gameObject.transform);
+        }
+
+        var spawned = Instantiate(spawnObj, myOnRoadPositions[index]);
+
+        spawned.GetComponent<IInRoad>().SetPath(children);
+        myOnRoadPositions.RemoveAt(index);
+    }
+
+    public void CreateNextRoadRandomEvent(GameObject spawnObj)
+    {
+        var index = Random.Range(0, myNextRoadPositions.Count);
+        var spawned = Instantiate(spawnObj, myNextRoadPositions[index]);
+        myNextRoadPositions.RemoveAt(index);
     }
 }

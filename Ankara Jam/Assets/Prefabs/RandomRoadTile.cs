@@ -3,11 +3,12 @@ using UnityEngine;
 
 public class RandomRoadTile : MonoBehaviour
 {
-
+    bool isOnce;
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Player")
+        if (other.gameObject.tag == "Player" && !isOnce)
         {
+            isOnce = true;
             CreateRandomTile();
         }
     }
@@ -20,7 +21,8 @@ public class RandomRoadTile : MonoBehaviour
         (
             this.gameObject.transform.position.x,
             this.gameObject.transform.position.y,
-            this.gameObject.transform.position.z + 240
+            this.gameObject.transform.position.z - 240
         );
+        Destroy(gameObject);
     }
 }

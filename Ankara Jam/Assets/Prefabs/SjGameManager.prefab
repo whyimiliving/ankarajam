@@ -46,3 +46,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RandomEvents:
   - {fileID: 3354594733758768414, guid: 660af115ce70c1c4a80a9ca7d8f1a339, type: 3}
+  - {fileID: 8647727668951298870, guid: b9e946bf8150cd249b53bf1eae1876f5, type: 3}
+  - {fileID: 3354594733758768414, guid: d39b0a8d0cde18a4ab0ae1fa1b6850ab, type: 3}
+  RandomRoadTiles:
+  - {fileID: 6509407036304830423, guid: e27bfb38431234b42bcf25f3b01ea3a5, type: 3}
+  - {fileID: 5813910305997346874, guid: b207e977d345394499e85bb557c84241, type: 3}
+  RandomOtherTiles: []
+  RandomCars:
+  - {fileID: 2043770359205971975, guid: 6cb95b22763df80428871783df403176, type: 3}
+  - {fileID: 3802193113496902382, guid: dfeb09da8b360644d9da536525136d4f, type: 3}

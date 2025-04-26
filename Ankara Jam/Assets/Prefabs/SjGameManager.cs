@@ -6,6 +6,9 @@ public class SjGameManager : MonoBehaviour
     public GameObject[] RandomEvents;
     public GameObject[] RandomRoadTiles;
     public GameObject[] RandomOtherTiles;
+    public GameObject[] RandomCars;
+    public GameObject[] spawnUiParents;
+
 
     void Awake()
     {
