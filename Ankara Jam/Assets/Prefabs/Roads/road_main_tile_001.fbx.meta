@@ -5,15 +5,20 @@ ModelImporter:
   internalIDToNameTable: []
   externalObjects:
   - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: road
+    second: {fileID: 2100000, guid: 8afd42c3c56f25b4cb53713fcda8cb78, type: 2}
+  - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: ThreeLaneRoadWet01_2K_BaseColor
-    second: {fileID: 2800000, guid: 47e62325beb442c45806171e7a2b8d3c, type: 3}
+    second: {fileID: 2800000, guid: 21f82b2e124b5a044820851cda011755, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: ThreeLaneRoadWet01_2K_Normal
-    second: {fileID: 2800000, guid: 6e5b68e24e07b2c41822e5e677101cb8, type: 3}
+    second: {fileID: 2800000, guid: 3b658a6623e80524da4dc9449349b98f, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0
