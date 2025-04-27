@@ -2,7 +2,6 @@ using UnityEngine;
 
 public class DontCrush : MonoBehaviour
 {
-    [SerializeField] private GameObject sfx;
     
     private void OnTriggerEnter(Collider other)
     {
