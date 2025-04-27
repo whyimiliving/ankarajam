@@ -25,7 +25,6 @@ public class RandomEventManager : MonoBehaviour
         {
             if (component is INextRoad)
             {
-                //INextRoad testComponent = (INextRoad)component;
                 CreateNextRoadRandomEvent(spawnObj);
                 break;
             }
@@ -48,7 +47,7 @@ public class RandomEventManager : MonoBehaviour
         }
 
         var spawned = Instantiate(spawnObj, myOnRoadPositions[index]);
-
+        spawned.transform.rotation = myOnRoadPositions[index].transform.rotation;
         spawned.GetComponent<IInRoad>().SetPath(children);
         myOnRoadPositions.RemoveAt(index);
     }
@@ -59,4 +58,5 @@ public class RandomEventManager : MonoBehaviour
         var spawned = Instantiate(spawnObj, myNextRoadPositions[index]);
         myNextRoadPositions.RemoveAt(index);
     }
+
 }

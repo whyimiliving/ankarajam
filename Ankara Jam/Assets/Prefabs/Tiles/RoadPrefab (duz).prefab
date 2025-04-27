@@ -1923,7 +1923,6 @@ MonoBehaviour:
   - {fileID: 835399938461164894}
   - {fileID: 7473250095387682925}
   - {fileID: 7620462112596562787}
-  - {fileID: 0}
   myNextRoadPositions:
   - {fileID: 8885689175609161968}
   - {fileID: 8844461087162522318}

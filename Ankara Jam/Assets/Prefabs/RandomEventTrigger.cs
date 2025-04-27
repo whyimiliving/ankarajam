@@ -5,7 +5,7 @@ public class RandomEventTrigger : MonoBehaviour, INextRoad
     public GameObject[] spawnParents;
     public GameObject spawnObj;
     private bool isDone;
-    private bool isUi;
+    public bool isUi;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -17,22 +17,32 @@ public class RandomEventTrigger : MonoBehaviour, INextRoad
     }
 
     public void SpawnEventGulucuk()
-    {
+    {   
         if (isUi)
         {
-            spawnParents = SjGameManager.instance.spawnUiParents;
+            CreateRandomUiEvent();
+            return;
         }
 
+        if (!spawnObj)
+        {
+            return;
+        }
         int index = Random.Range(0, spawnParents.Length);
         var spawnPoint = spawnParents[index];
-        if (isUi)
-        {
-            var spawned = Instantiate(spawnObj, spawnPoint.transform);
-        }
-        else
-        {
-            var spawned = Instantiate(spawnObj, spawnPoint.transform);
-        }
+        var spawned = Instantiate(spawnObj, spawnPoint.transform);
+    }
 
+    public void CreateRandomUiEvent()
+    {
+        var index = Random.Range(0, SjGameManager.instance.spawnUiParents.Length);
+        if (SjGameManager.instance.spawnUiParents[index].transform.childCount > 0)
+        {
+            CreateRandomUiEvent();
+            return;
+        }
+        var objIndex = Random.Range(0, SjGameManager.instance.UiCutScenes.Count);
+        var spawned = Instantiate(SjGameManager.instance.UiCutScenes[objIndex], SjGameManager.instance.spawnUiParents[index].transform);
+        //SjGameManager.instance.UiCutScenes.RemoveAt(objIndex);
     }
 }

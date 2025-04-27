@@ -21,7 +21,7 @@ public class RandomRoadTile : MonoBehaviour
         (
             this.gameObject.transform.position.x,
             this.gameObject.transform.position.y,
-            this.gameObject.transform.position.z - 240
+            this.gameObject.transform.position.z - 360
         );
         Destroy(gameObject);
     }

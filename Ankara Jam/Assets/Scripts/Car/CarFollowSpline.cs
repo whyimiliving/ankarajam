@@ -63,5 +63,4 @@ public class CarSplineFollower : MonoBehaviour, IInRoad
     {
         splinePoints = points;
     }
-
 }
