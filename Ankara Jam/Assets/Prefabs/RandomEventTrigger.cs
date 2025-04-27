@@ -22,16 +22,17 @@ public class RandomEventTrigger : MonoBehaviour, INextRoad
         if (isUi)
         {
             CreateRandomUiEvent();
-            return;
         }
-
-        if (!spawnObj)
+        else
         {
-            return;
+            if (!spawnObj)
+            {
+                return;
+            }
+            int index = Random.Range(0, spawnParents.Length);
+            var spawnPoint = spawnParents[index];
+            var spawned = Instantiate(spawnObj, spawnPoint.transform);
         }
-        int index = Random.Range(0, spawnParents.Length);
-        var spawnPoint = spawnParents[index];
-        var spawned = Instantiate(spawnObj, spawnPoint.transform);
     }
 
     public void CreateRandomUiEvent()
@@ -46,6 +47,7 @@ public class RandomEventTrigger : MonoBehaviour, INextRoad
                 if (item.transform.childCount <= 0)
                 {
                     SpawnGulucuk(i);
+                    return;
                 }
             }
         }

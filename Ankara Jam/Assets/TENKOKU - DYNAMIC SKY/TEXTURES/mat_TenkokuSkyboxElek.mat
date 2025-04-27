@@ -86,7 +86,7 @@ Material:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _EmissionColorUI: {r: 1, g: 1, b: 1, a: 1}
-    - _GroundColor: {r: 0.1102941, g: 0.08836951, b: 0.06487888, a: 1}
+    - _GroundColor: {r: 0.2528302, g: 0.22095539, b: 0.1827056, a: 1}
     - _MieColor: {r: 1, g: 1, b: 1, a: 1}
     - _MoonColor: {r: 0.08309906, g: 0.18720803, b: 0.21323532, a: 1}
     - _NightColor: {r: 0, g: 0.10980392, b: 0.14117648, a: 1}
