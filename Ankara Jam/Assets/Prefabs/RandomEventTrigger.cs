@@ -7,14 +7,58 @@ public class RandomEventTrigger : MonoBehaviour, INextRoad
     public GameObject spawnObj;
     private bool isDone;
     public bool isUi;
+    public bool isForcedRightUi;
+    public bool isForcedLeftUi;
+    public bool isForcedADUi;
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Player" && !isDone)
         {
+            Debug.Log("1aaa1");
+
             isDone = true;
-            SpawnEventGulucuk();
+            if (isForcedLeftUi)
+            {
+                SpawnEventLeftUi();
+            }
+            else if (isForcedRightUi)
+            {
+                SpawnEventRightUi();
+            }
+            else if (isForcedADUi)
+            {
+                SpawnEventADUi();
+            }
+            else
+            {
+                SpawnEventGulucuk();
+            }
         }
+    }
+
+    public void SpawnEventADUi() // bunu okuyan kisi ozur dilerim zaman yoktu hardcoded event ekledim
+    {
+        Debug.Log("11");
+        var objIndex = Random.Range(0, SjGameManager.instance.UiCutScenes.Count);
+        var spawned = Instantiate(SjGameManager.instance.UiCutScenes[objIndex], SjGameManager.instance.spawnUiParents[2].transform);
+        var spawnedCanvas = Instantiate(SjGameManager.instance.tutorials[1]);
+    }
+
+    public void SpawnEventRightUi()
+    {
+        Debug.Log("21");
+
+        var objIndex = Random.Range(0, SjGameManager.instance.UiCutScenes.Count);
+        var spawned = Instantiate(SjGameManager.instance.UiCutScenes[objIndex], SjGameManager.instance.spawnUiParents[2].transform);
+        var spawnedCanvas = Instantiate(SjGameManager.instance.tutorials[2]);
+    }
+
+    public void SpawnEventLeftUi()
+    {
+        var objIndex = Random.Range(0, SjGameManager.instance.UiCutScenes.Count);
+        var spawned = Instantiate(SjGameManager.instance.UiCutScenes[objIndex], SjGameManager.instance.spawnUiParents[0].transform);
+        var spawnedCanvas = Instantiate(SjGameManager.instance.tutorials[3]);
     }
 
     public void SpawnEventGulucuk()
@@ -38,7 +82,6 @@ public class RandomEventTrigger : MonoBehaviour, INextRoad
     public void CreateRandomUiEvent()
     {
         var index = Random.Range(0, SjGameManager.instance.spawnUiParents.Length);
-        Debug.Log("hafizanin geldigi index: " + index);
         if (SjGameManager.instance.spawnUiParents[index].transform.childCount > 0)
         {
             for (int i = 0; i < SjGameManager.instance.spawnUiParents.Length; i++)

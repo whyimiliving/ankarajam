@@ -10,6 +10,7 @@ public class SjGameManager : MonoBehaviour
     public GameObject[] RandomCars;
     public GameObject[] spawnUiParents;
     public List<GameObject> UiCutScenes;
+    public GameObject[] tutorials;
 
     void Awake()
     {
