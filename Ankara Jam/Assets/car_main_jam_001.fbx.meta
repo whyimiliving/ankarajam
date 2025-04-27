@@ -3,7 +3,172 @@ guid: 02792e6c28270f14bbf612019324b939
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Steering_wheel
+    second: {fileID: 2100000, guid: 269f5d9d5ed73374393b3019c8e1345b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_dashboard
+    second: {fileID: 2100000, guid: b2f8ef3c1e70d244f9c357ae2bd48dec, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_dashboard.001
+    second: {fileID: 2100000, guid: 878680e635d94ce4aab14baf0d18d9f0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.003
+    second: {fileID: 2100000, guid: d88da061fd5f98e45b156771b5f0671d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.004
+    second: {fileID: 2100000, guid: 24d0e2e7e514e934dbf4dc079e7b8ef6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.005
+    second: {fileID: 2100000, guid: 1aef68bdf10f99e4a9ddcf21003e1462, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.008
+    second: {fileID: 2100000, guid: a1e74b464794faa42b1530b6345ee0e8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.010
+    second: {fileID: 2100000, guid: fb17a94c1462114468f36a628cdba246, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.011
+    second: {fileID: 2100000, guid: 133f2c6ad13f2484588a4fdd17b4c5fd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.013
+    second: {fileID: 2100000, guid: ce26c45a60a398940be5ffca0a7c618d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.014
+    second: {fileID: 2100000, guid: b1821209f1b21d9409dd0756f43aa395, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.016
+    second: {fileID: 2100000, guid: f817df66b73494d46a3c7e376dbda18a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.019
+    second: {fileID: 2100000, guid: cf3215e55022bcc4a9eb9a7754d6abc5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.020
+    second: {fileID: 2100000, guid: 98f3a791294c9114ab801df82bd825ce, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.021
+    second: {fileID: 2100000, guid: 274e8f76f589cee4fae3273b407959d0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.026
+    second: {fileID: 2100000, guid: 3f00f3dd62d24234aa24bd5cfde4b820, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: belts
+    second: {fileID: 2100000, guid: 79388b373793dcf40a99ac9e8b8cae76, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: car_plastic_grainy_gray
+    second: {fileID: 2100000, guid: debd5504a98cd40438e600f3808d499a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: carpet.002
+    second: {fileID: 2100000, guid: 6d956324ae120a945af165c982a31c69, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: dark_plastic_grainy
+    second: {fileID: 2100000, guid: a5fff7636c61e3d4ea726d224e0f80b5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: fabric_high
+    second: {fileID: 2100000, guid: 005b5547208c9134aaf9635bd21a3071, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: invisible_dark
+    second: {fileID: 2100000, guid: 4170b4d3913886d4487be5702c3fffb1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: klosz
+    second: {fileID: 2100000, guid: 6d0b242880cbb60428b44f161f2b341d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: leather
+    second: {fileID: 2100000, guid: 819dd823e5876824997c921affdb7f6c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: main_paint
+    second: {fileID: 2100000, guid: be93f8fa6a394894fafe28115f0bef86, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: main_paint.001
+    second: {fileID: 2100000, guid: e447cdef391f9bc42a71734b17f31156, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: miror
+    second: {fileID: 2100000, guid: 6dd260023e563cb458f191e6bcc9d901, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: plastic1
+    second: {fileID: 2100000, guid: 3c7f7251e699aa44f8681222a554ab00, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: screen
+    second: {fileID: 2100000, guid: fbcb9699655835247aacdfb47522647c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: seat_fabric
+    second: {fileID: 2100000, guid: 367f641df826c7e4a8dfa50674c90273, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: smal_screen
+    second: {fileID: 2100000, guid: 67cc6fc9414af8d458078e14d036c54d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: speaker
+    second: {fileID: 2100000, guid: 0e35bad0aff147241a282224eab9c226, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: tyre_side
+    second: {fileID: 2100000, guid: a4c54b6ed15b8b54e8d16a3515a0e0a7, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
