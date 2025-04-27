@@ -7,7 +7,14 @@ public class RemoveMemory : MonoBehaviour
 
     public void DoAnim(bool isRight)
     {
-
+        if (isRight)
+        {
+            myAnimator.SetTrigger("right");
+        }
+        else
+        {
+            myAnimator.SetTrigger("left");
+        }
     }
 
     public void RemoveChilds()
